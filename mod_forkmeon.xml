@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_forkmeon</name>
+    <author>LadyJ</author>
+    <creationDate>September 2015</creationDate>
+    <copyright>Copyright (C) 2015 LadyjJ (Mariella Colombo) All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>mariella.colombo@ladyj.eu</authorEmail>
+    <authorUrl>www.ladyj.eu</authorUrl>
+    <version>0.0.1</version>
+    <description>MOD_FORKMEON_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_forkmeon">mod_forkmeon.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_forkmeon.ini</language>
+        <language tag="en-GB">en-GB.mod_forkmeon.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_FORKMEON"/>
+    <config>
+        <fields name="params">
+            <fieldset name='basic'>
+                <field name="hosting" type="list" default="github" label="Select a GIT hosting service" required="true">
+                    <option value="github">GitHub</option>
+                    <option value="bitbucket">BitBucket</option>
+                </field>
+                <field
+                        name="username"
+                        type="text"
+                        label="MOD_FORKMEON_FIELDSET_REPOSITORY_USERNAME_LABEL"
+                        description="MOD_FORKMEON_FIELDSET_REPOSITORY_USERNAME_DES"
+                        required="true"/>
+                <field name="cache" type="radio"
+                       description="MOD_FORKMEON_CACHING_ENABLED_DES"
+                       label="MOD_FORKMEON_CACHING_ENABLED_LABEL"
+                       default="1"
+                       class="btn-group btn-group-yesno"
+                        >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="cache_time"
+                        type="text"
+                        default="60"
+                        label="MOD_FORKMEON_FIELD_CACHE_TIME_LABEL"
+                        description="MOD_FORKMEON_FIELD_CACHE_TIME_DESC"/>
+            </fieldset>
+            <fieldset
+                    name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
