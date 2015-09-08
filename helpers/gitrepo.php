@@ -2,9 +2,10 @@
 /**
  * @package     Joomla.Module
  * @subpackage  mod_forkmeon
- * @version     0.0.1
  *
- * @copyright   Copyright (C) 2015 LadyjJ (Mariella Colombo) All rights reserved.
+ * @author      Mariella Colombo (aka Ladyj) <mariella.colombo@ladyj.eu>
+ * @link        http://www.ladyj.eu
+ * @copyright   Copyright (C) 2015 Mariella Colombo All rights reserved.
  * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
