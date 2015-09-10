@@ -22,3 +22,5 @@ Item properties injected are:
 These item properties are taken from README.md file:
 * [programmingLanguage](http://schema.org/programmingLanguage "programmingLanguage")
 * [runtimePlatform](http://schema.org/runtimePlatform "runtimePlatform")
+##Module Class Suffix
+Try 'zigzag'!
