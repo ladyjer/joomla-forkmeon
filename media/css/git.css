@@ -1,0 +1,76 @@
+.mod_forkmeon.zigzag::after {
+    content:'';
+    display:block;
+    height:10px;
+    background:repeating-linear-gradient(
+            -45deg,
+            transparent ,
+            transparent  50%,
+            #db7903 50%,
+            #db7903
+    )
+    bottom,
+    repeating-linear-gradient(
+            45deg,
+            transparent ,
+            transparent  50%,
+            #db7903 50%,
+            #db7903
+    )
+    bottom;
+    background-size:10px 10px;
+    background-repeat:repeat-x;
+    box-shadow:0 -100px/* or bigger */ 0 100px transparent;/* this to fill background of parent div */
+}
+
+.mod_forkmeon.zigzag::before {
+    content:'';
+    display:block;
+    height:10px;
+    background:repeating-linear-gradient(
+            -135deg,
+            transparent ,
+            transparent  50%,
+            #db7903 50%,
+            #db7903
+    )
+    top,
+    repeating-linear-gradient(
+            135deg,
+            transparent ,
+            transparent  50%,
+            #db7903 50%,
+            #db7903
+    )
+    top;
+    background-size:10px 10px;
+    background-repeat:repeat-x;
+    box-shadow:0 -100px/* or bigger */ 0 100px transparent;/* this to fill background of parent div */
+}
+
+.mod_forkmeon.zigzag ul {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #db7903;
+}
+
+.mod_forkmeon.zigzag ul li {
+    list-style: none;
+    color: white;
+}
+
+.mod_forkmeon.zigzag ul li a,
+.mod_forkmeon.zigzag ul li a:hover {
+    list-style: none;
+    color: #774003;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.mod_forkmeon.zigzag ul {
+    background-image: url("/media/mod_forkmeon/images/octocat.png");
+    background-position: 190% 50%;
+    background-repeat: no-repeat;
+}

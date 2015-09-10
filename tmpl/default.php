@@ -10,12 +10,19 @@
  */
 
 defined('_JEXEC') or die;
+
+$document = JFactory::getDocument();
+$document->addStyleSheet('media' .
+    DIRECTORY_SEPARATOR . 'mod_forkmeon' .
+    DIRECTORY_SEPARATOR . 'css' .
+    DIRECTORY_SEPARATOR . 'git.css');
 ?>
+<div class="mod_forkmeon <?php echo $moduleclass_sfx ?>">
 <?php if (is_string($gitRepos)) : ?>
     <div><?php echo $gitRepos; ?></div>
 <?php else : ?>
     <?php if (!$gitRepos->isEmpty()) : ?>
-        <ul class="<?php echo $moduleclass_sfx ?>">
+        <ul>
             <?php foreach ($gitRepos as $key => $repo) : ?>
                 <li>
                     <a href="<?php echo $repo->html_url; ?>"
@@ -27,3 +34,4 @@ defined('_JEXEC') or die;
         <cite><?php echo JText::_('MOD_FORKMEON_NO_REPOS'); ?></cite>
     <?php endif; ?>
 <?php endif; ?>
+</div>

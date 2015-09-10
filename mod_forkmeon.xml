@@ -9,16 +9,25 @@
     <authorUrl>www.ladyj.eu</authorUrl>
     <version>0.0.1</version>
     <description>MOD_FORKMEON_XML_DESCRIPTION</description>
+
     <files>
         <filename module="mod_forkmeon">mod_forkmeon.php</filename>
         <folder>tmpl</folder>
         <filename>helper.php</filename>
     </files>
+
     <languages>
         <language tag="en-GB">en-GB.mod_forkmeon.ini</language>
         <language tag="en-GB">en-GB.mod_forkmeon.sys.ini</language>
     </languages>
+
     <help key="JHELP_EXTENSIONS_MODULE_FORKMEON"/>
+
+    <media destination="mod_forkmeon" folder="media">
+        <folder>images</folder>
+        <folder>css</folder>
+    </media>
+
     <config>
         <fields name="params">
             <fieldset name='basic'>
