@@ -8,6 +8,8 @@ Joomla! 3 Module
 ##Supported Web-based Git repository hosting service
 Forkmeon supports GitHub.
 To support others, such as BitBucket, it needs to implement related versions of /mod_forkmeon/helpers/gitrepo.php and /mod_forkmeon/helpers/gitrepos.php files.
+##Module Class Suffix
+Try 'zigzag'!
 ##Layout
 Forkmeon comes with two kind of layout: default and microdata
 ### Default
@@ -22,5 +24,3 @@ Item properties injected are:
 These item properties are taken from README.md file:
 * [programmingLanguage](http://schema.org/programmingLanguage "programmingLanguage")
 * [runtimePlatform](http://schema.org/runtimePlatform "runtimePlatform")
-##Module Class Suffix
-Try 'zigzag'!
