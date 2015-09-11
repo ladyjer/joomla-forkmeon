@@ -6,16 +6,16 @@
             -45deg,
             transparent ,
             transparent  50%,
-            #db7903 50%,
-            #db7903
+            #006ab7 50%,
+            #006ab7
     )
     bottom,
     repeating-linear-gradient(
             45deg,
             transparent ,
             transparent  50%,
-            #db7903 50%,
-            #db7903
+            #006ab7 50%,
+            #006ab7
     )
     bottom;
     background-size:10px 10px;
@@ -31,16 +31,16 @@
             -135deg,
             transparent ,
             transparent  50%,
-            #db7903 50%,
-            #db7903
+            #006ab7 50%,
+            #006ab7
     )
     top,
     repeating-linear-gradient(
             135deg,
             transparent ,
             transparent  50%,
-            #db7903 50%,
-            #db7903
+            #006ab7 50%,
+            #006ab7
     )
     top;
     background-size:10px 10px;
@@ -52,7 +52,7 @@
     margin: 0;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #db7903;
+    background-color: #006ab7;
 }
 
 .mod_forkmeon.zigzag ul li {
@@ -63,7 +63,7 @@
 .mod_forkmeon.zigzag ul li a,
 .mod_forkmeon.zigzag ul li a:hover {
     list-style: none;
-    color: #774003;
+    color: #7fc5ff;
     font-size: 1.3em;
     font-weight: bolder;
     text-transform: uppercase;
